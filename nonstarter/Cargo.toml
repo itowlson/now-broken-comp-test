@@ -1,0 +1,20 @@
+[package]
+name = "nonstarter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cargo-component-bindings = "0.2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "component:nonstarter"
+
+[package.metadata.component.target.dependencies]
+"fermyon:spin" = { path = "../../../github/spin/wit/preview2" }  # directory containing the WIT package
+
+[package.metadata.component.dependencies]

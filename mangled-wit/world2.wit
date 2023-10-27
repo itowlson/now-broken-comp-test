@@ -1,0 +1,11 @@
+package component:comppp
+
+use fermyon:spin/inbound-http
+// use fermyon:spin/app-start
+use fermyon:spin/sqlite
+
+world example {
+    export inbound-http
+    // export app-start
+    import sqlite
+}

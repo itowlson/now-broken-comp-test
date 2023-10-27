@@ -1,0 +1,7 @@
+package component:nonstarter
+
+use fermyon:spin/inbound-http
+
+world example {
+    export inbound-http
+}
